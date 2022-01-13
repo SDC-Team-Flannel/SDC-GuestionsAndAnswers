@@ -1,0 +1,24 @@
+{
+  "name": "sdc-questionsandanswers",
+  "version": "1.0.0",
+  "description": "SDC Questions and Answers",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SDC-Team-Flannel/SDC-QuestionsAndAnswers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SDC-Team-Flannel/SDC-QuestionsAndAnswers/issues"
+  },
+  "homepage": "https://github.com/SDC-Team-Flannel/SDC-QuestionsAndAnswers#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
