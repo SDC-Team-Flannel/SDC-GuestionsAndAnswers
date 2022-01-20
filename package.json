@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "createDatabase": "psql -d SDC -f database/schema.sql",
+    "startETL": "node -e 'require(\"./database/parseData.js\").startETL()'"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,10 @@
   },
   "homepage": "https://github.com/SDC-Team-Flannel/SDC-QuestionsAndAnswers#readme",
   "dependencies": {
+    "dotenv": "^12.0.4",
     "express": "^4.17.2",
-    "nodemon": "^2.0.15"
+    "fs": "^0.0.1-security",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.1"
   }
 }
